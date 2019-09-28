@@ -52,13 +52,13 @@
             <td>
               <img src="homepage_files/research/history/diagram.jpg" alt="" width="300px" height="162px" />&nbsp;</td>
             <td align="left">
-              <p>I worked to construct an unsupervised model to generate profiles for historical figures by extracting
+              <p>I worked to construct an unsupervised framework to generate profiles for historical figures by extracting
                 person entities and their biographical information from a set of classical Chinese histography.</p>
               <p>I have made the following contributions to the project:</p>
               <ul>
                 <li>
                   <p>Developed a Bootstrapping algorithm based on textual patterns to iteratively discover new
-                    knowledge, and reached an F1 of 0.851 on ground-truth person profiles annotated by domain experts
+                    knowledge while handling semantic drift by designing appropriate ranking functions for both patterns and corresponding extractions
                   </p>
                 </li>
                 <li>
@@ -80,18 +80,19 @@
               <img src="homepage_files/research/gnn/embed.jpg" alt="" width="300px" height="256px" />&nbsp;</td>
             <td align="left">
             <td>
-              <img src="homepage_files/research/gnn/loss.jpg" alt="" width="300px" height="197px" />&nbsp;</td>
+              <img src="homepage_files/research/gnn/stats.jpg" alt="" width="300px" height="304px" />&nbsp;</td>
             <td align="left">
               <p>I worked in team to build a framework of evolutionary graph neural networks to generate node
-                embedding series from the a set of graph series, instead of a single static graph.</p>
+                embedding series from the seen graph series, preserve the impact of temporally early graphs on the current graph.</p>
               <p>I have made the following contributions to the project:</p>
               <ul>
                 <li>
-                  <p>Worked with Microsoft Academic Graph data (~100G)
+                  <p>Worked with Microsoft Academic Graph data (~100G) and mined information from co-author graphs from 2001 to 2010
+                    <!-- , where each node represents an author and each edge indicates the co-authorship in one paper between two authors -->
                   </p>
                 </li>
                 <li>
-                  <p>Mined information from a publication graph, where each node represents an author and each edge indicates the co-authorship in one paper between two authors
+                  <p>Levaraged statistics in data (shown in the right figure) to support the assumption of the evolutionary nature of both node attributes and graph topology in co-author graphs from year to year
                   </p>
                 </li>
                 <li>
@@ -117,8 +118,8 @@
               <p>I have made the following contributions to the project:</p>
               <ul>
                 <li>
-                  <p>Adapted the Pixel-to-Pixel (2D) CycleGAN in PyTorch for Voxel-to-Voxel (3D) domain translation as
-                    one of the baseline models using Pytorch</p>
+                  <p>Adapted the Pixel-to-Pixel (2D) CycleGAN for Voxel-to-Voxel (3D) domain translation as
+                    one of the baseline models using PyTorch</p>
                 </li>
                 <li>
                   <p>Conducted exhaustive experiments to compare the performance of the proposed model and 3 baseline
