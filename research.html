@@ -27,138 +27,71 @@
           <div class="blockcontent">
             <ol>
               <li>
-                <p><a href="#ie_history">Person Entity Extraction and Profile Construction in Classical Chinese Historiography</a></p>
+                <p><a href="#NILM">Non-Intrusive Appliance Identification with Appliance-Specific Networks</a></p>
               </li>
               <li>
-                <p><a href="#gnn">Node Embedding Learning in Academic Publication Graph via Evolutionary Graph Neural Networks</a></p>
-              </li>
-              <li>
-                <p><a href="#vis">Variable-to-Variable Translation for Multivariate Time-Varying Data Using Deep Learning</a></p>
-              </li>
-              <li>
-                <p><a href="#wavelets">Multi-resolution Approximation and Wavelets in the Analysis of Financial Data</a>
-                </p>
+                <p><a href="#3DPAD">Iris Presentation Attack Detection Based on Photometric Stereo Features</a></p>
               </li>
             </ol>
           </div>
         </div>
-        <h2><a id="ie_history">Person Entity Extraction and Profile Construction in Classical Chinese Historiography</a>
+        <h2><a id="NILM">Non-Intrusive Appliance Identification with Appliance-Specific Networks</a>
         </h2>
         <table class="imgtable">
           <tr>
             <td>
-              <img src="homepage_files/research/history/table.jpg" alt="" width="300px" height="152px" />&nbsp;</td>
+              <img src="homepage_files/research/NILM/24HourSpan.png" alt="" width="300px" height="136px" />&nbsp;</td>
             <td align="left">
             <td>
-              <img src="homepage_files/research/history/diagram.jpg" alt="" width="300px" height="162px" />&nbsp;</td>
+              <img src="homepage_files/research/NILM/econstructedFridge.png" alt="" width="300px" height="136px" />&nbsp;</td>
             <td align="left">
-              <p>I worked to construct an unsupervised framework to generate profiles for historical figures by extracting
-                person entities and their biographical information from a set of classical Chinese historiography.</p>
+              <p>I proposed a novel Non-Instrusive Load Monitoring (NILM) method for load identification and energy disaggregation 
+                based on Bayes Nonparametric Learning and lightweight appliance-specific LSTM networks. This work was done during my
+                internship at Argonne National Laboratory.</p>
               <p>I have made the following contributions to the project:</p>
               <ul>
                 <li>
-                  <p>Developed a Bootstrapping algorithm based on textual patterns to iteratively discover new
-                    knowledge while handling semantic drift by designing appropriate ranking functions for both patterns and corresponding extractions
+                  <p>Designed a simple but effective event pre-processing technique that based on the idea of "velocity" in pose prediction
+                    to reduce complexity of network training and make the proposed method robust to multi-appliance scenarios.
                   </p>
                 </li>
                 <li>
-                  <p>Pre-trained the Character Embedding via Word2vec on the corpus of Orthodox Histories</p>
+                  <p>Proposed to use appliance-specific networks for more accurate load state classification, where each network focuses
+                    on one type of appliance and is much easier to train than a huge composite network.</p>
                 </li>
                 <li>
-                  <p>Adapted the Bi-LSTM CRF in PyTorch for the task of Named Entity Recognition (NER) in the domain of
-                    classical Chinese</p>
+                  <p>Adapted well-established techniques such as Bayes Nonparametric Learning and SMOTE: Synthetic Minority Over-sampling 
+                    Technique for more robust unsupervised load state clustering and mitigating class imbalance.</p>
                 </li>
               </ul>
             </td>
           </tr>
         </table>
-        <h2><a id="gnn">Node Embedding Learning in Academic Publication Graph via Evolutionary Graph Neural Networks</a>
+        <h2><a id="3DPAD">Iris Presentation Attack Detection Based on Photometric Stereo Features</a>
         </h2>
         <table class="imgtable">
           <tr>
             <td>
-              <img src="homepage_files/research/gnn/embed.jpg" alt="" width="300px" height="256px" />&nbsp;</td>
+              <img src="homepage_files/research/3DPAD/e2v4.png" alt="" width="300px" height="124px" />&nbsp;</td>
             <td align="left">
             <td>
-              <img src="homepage_files/research/gnn/stats.jpg" alt="" width="300px" height="304px" />&nbsp;</td>
+              <img src="homepage_files/research/3DPAD/method.png" alt="" width="300px" height="203px" />&nbsp;</td>
             <td align="left">
-              <p>I worked in team to build a framework of evolutionary graph neural networks to generate node
-                embedding series from the seen graph series, preserving the impact of temporally early graphs on the current graph.</p>
+              <p>We proposed the first presentation attack detection (PAD) algorithm based on three-dimensional features 
+                known to us for the detection of textured contact lenses (TCLs). This work was done at Notre Dame Computer Vision Research Lab.</p>
               <p>I have made the following contributions to the project:</p>
               <ul>
                 <li>
-                  <p>Worked with Microsoft Academic Graph data (~100G) and mined information from co-author graphs from 2001 to 2010
-                    <!-- , where each node represents an author and each edge indicates the co-authorship in one paper between two authors -->
+                  <p> Designed the photometric stereo-based PAD algorithm based on the observation that the shadows are different when real irises and 
+                    TCLs are illuminated
                   </p>
                 </li>
                 <li>
-                  <p>Levaraged statistics in data (shown in the right figure) to support the assumption of the evolutionary nature of both node attributes and graph topology in co-author graphs from year to year
+                  <p>Levaraged 3D information of the iris / TCL surface for classification to make the method pattern-agnostic and thus more generalizable.
                   </p>
                 </li>
                 <li>
-                  <p>“Web scraped” the citations-per-year data of a total of 1,928 author nodes in the publication graph from Google Scholar</p>
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-        <h2><a id="vis">Variable-to-Variable Translation for Multivariate Time-Varying Data Using Deep Learning</a>
-        </h2>
-        <table class="imgtable">
-          <tr>
-            <td>
-              <img src="homepage_files/research/vis/render.jpg" alt="" width="300px" height="197px" />&nbsp;</td>
-            <td align="left">
-            <td>
-              <img src="homepage_files/research/vis/gt.jpg" alt="" width="300px" height="197px" />&nbsp;</td>
-            <td align="left">
-              <p>I worked in team to design a novel deep learning framework as a general-purpose solution to the
-                variable-to-variable translation problem for multivariate time-varying data (MTVD) analysis and
-                visualization.</p>
-              <p>I have made the following contributions to the project:</p>
-              <ul>
-                <li>
-                  <p>Adapted the Pixel-to-Pixel (2D) CycleGAN for Voxel-to-Voxel (3D) domain translation as
-                    one of the baseline models using PyTorch</p>
-                </li>
-                <li>
-                  <p>Conducted exhaustive experiments to compare the performance of the proposed model and 3 baseline
-                    models on 4 scientific simulation data set (i.e., combustion, ionization, climate and combustion
-                    maps)</p>
-                </li>
-                <li>
-                  <p>Rendered and analyzed the generated scientific simulation data via ParaView, an open-source data
-                    analysis and visualization application</p>
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-        <h2><a id="wavelets">Multi-resolution Approximation and Wavelets in the Analysis of Financial Data</a></h2>
-        <table class="imgtable">
-          <tr>
-            <td>
-              <img src="homepage_files/research/wavelets/furf.jpg" alt="" width="400px" height="300px" />&nbsp;</td>
-            <td align="left">
-              <p>I worked to construct a model for predicting stock prices, leveraging algorithms in wavelets analysis
-                and machine
-                learning. I presented my work at <a
-                  href="https://science.nd.edu/events/2018/10/25/fall-undergraduate-research-fair/">Fall Undergraduate
-                  Research Fair (FAIR)</a> at University of Notre Dame and please check the picture on the left.</p>
-              <p>I have made the following contributions to the project:</p>
-              <ul>
-                <li>
-                  <p>Reproduced the Fast Wavelet Transform (FWT) algorithm by Mallat to compute the wavelet transform
-                    coefficients of S&amp;P Index data for period 2002-2014</p>
-                </li>
-                <li>
-                  <p>Leveraged the Stein’s Unbiased Risk Estimate (SURE) algorithm to threshold the wavelets
-                    coefficients for denoising</p>
-                </li>
-                <li>
-                  <p>Predicted the tendencies (whether going up or down in the next time stamp) of S&amp;P Index using
-                    the combination of Wavelet Transforms and Deep Neural Network, achieving an accuracy of 60.71% in
-                    backtesting</p>
+                  <p>Developed an advanced local area attention scheme to </p>
                 </li>
               </ul>
             </td>
