@@ -23,7 +23,7 @@
               <p>I'm an MS student in Robotics at <a href="https://www.ri.cmu.edu/">Carnegie Mellon University</a>, working with <a href="https://www.cs.cmu.edu/~katef/">Prof. Katerina Fragkiadaki</a> on Computer Vision and Machine Learning.
               </p>
               <p>
-                I got my B.S. from the <a href="https://www.nd.edu/">University of Notre Dame</a>, majoring in Electrical Engineering and Maths. During my undergrad, I am fortunate to have spent great time working with <a href="https://engineering.nd.edu/faculty/adam-czajka/">Prof. Adam Czajka</a> and <a href="https://www3.nd.edu/~kwb/">Prof. Kevin Bowyer</a>. 
+                I got my B.S. from the <a href="https://www.nd.edu/">University of Notre Dame</a>, majoring in Electrical Engineering and Maths. During my undergrad, I was fortunate to work with <a href="https://engineering.nd.edu/faculty/adam-czajka/">Prof. Adam Czajka</a> and <a href="https://www3.nd.edu/~kwb/">Prof. Kevin Bowyer</a>. 
                 I was also lucky to have interned with <a href="https://davheld.github.io/">Prof. David Held</a> and collaborated with <a href="http://people.csail.mit.edu/hangzhao/">Prof. Hang Zhao</a>.
               </p>
               <p style="text-align:center">
@@ -49,6 +49,46 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="move_stop()" onmouseover="move_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='move_image'>
+                  <img src='imgs/move_loop.gif' width="160"></div>
+                <img src='imgs/move_loop.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function move_start() {
+                  document.getElementById('move_image').style.opacity = "1";
+                }
+
+                function move_stop() {
+                  document.getElementById('move_image').style.opacity = "0";
+                }
+                robustiris_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2012.00057">
+                <papertitle>Move to See Better: Self-Improving Embodied Object Detection</papertitle>
+              </a>
+              <br>
+              <strong>Zhaoyuan Fang*</strong>,
+              <a href="https://ayushjain1144.github.io/">Ayush Jain*</a>,
+              <a href="https://www.gabesar.ch/">Gabriel Sarch*</a>,
+              <a href="https://www.cs.cmu.edu/~aharley/">Adam W. Harley</a>,
+              <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a>
+              <br>
+              <em>Preprint</em>
+              <br>
+              <a href="https://github.com/ayushjain1144/SeeingByMoving">code</a> /
+              <br>
+              <p></p>
+              <p>
+              Assuming an embodied agent with a 2D pre-trained detector, a depth sensor, and approximate egomotion, we show how the agent can improve its 2D and 3D detection performance in a new environment under occlusions and uncommon viewpoints, simply by moving around.
+              </p>
+            </td>
+          </tr> 
 
           <tr onmouseout="robustiris_stop()" onmouseover="robustiris_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
