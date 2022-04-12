@@ -53,6 +53,44 @@
           <tr onmouseout="move_stop()" onmouseover="move_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
+                <div class="two" id='dpv_image'>
+                  <img src='imgs/horse_square.gif' width="160"></div>
+                <img src='imgs/horse_sqaure.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function move_start() {
+                  document.getElementById('dpv_image').style.opacity = "1";
+                }
+
+                function move_stop() {
+                  document.getElementById('dpv_image').style.opacity = "0";
+                }
+                robustiris_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2204.04153">
+                <papertitle>Particle Videos Revisited: Tracking Through Occlusions Using Point Trajectories</papertitle>
+              </a>
+              <br>
+              <a href="https://www.cs.cmu.edu/~aharley/">Adam W. Harley</a>,
+              <strong>Zhaoyuan Fang</strong>,
+              <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a>
+              <br>
+              <em>Preprint</em>, 2022
+              <br>
+              <a href="http://www.cs.cmu.edu/~aharley/particles/">project page</a>
+              <br>
+              <p></p>
+              <p>
+              Assuming an embodied agent with a 2D pre-trained detector, a depth sensor, and approximate egomotion, we show how the agent can improve its 2D and 3D detection performance in a new environment under occlusions and uncommon viewpoints, simply by moving around.
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="move_stop()" onmouseover="move_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
                 <div class="two" id='move_image'>
                   <img src='imgs/move_loop.gif' width="160"></div>
                 <img src='imgs/move_loop.gif' width="160">
@@ -81,7 +119,7 @@
               <br>
               <em>British Machine Vision Conference (BMVC)</em>, 2021
               <br>
-              <a href="https://github.com/ayushjain1144/SeeingByMoving">code</a> /
+              <a href="https://ayushjain1144.github.io/SeeingByMoving/">project page</a> / <a href="https://github.com/ayushjain1144/SeeingByMoving">code</a>
               <br>
               <p></p>
               <p>
@@ -290,6 +328,7 @@
               <heading>Misc.</heading>
               <p>
                 If you're bored, here's my favorite song of: 
+                <a href="https://www.youtube.com/watch?v=fsePYdkBd4o">03/22</a>,
                 <a href="https://www.youtube.com/watch?v=x_vwAzBsuWM">03/22</a>,
                 <a href="https://www.youtube.com/watch?v=k6ZoE4RrcDs">11/21</a>,
                 <a href="https://www.youtube.com/watch?v=URRimPZBHf8">08/21</a>, 
