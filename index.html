@@ -20,11 +20,15 @@
               <p style="text-align:center">
                 <name>Zhaoyuan &ldquo;Andy&rdquo; Fang</name>
               </p>
-              <p>I'm an MS student in Robotics at <a href="https://www.ri.cmu.edu/">Carnegie Mellon University</a>, working with <a href="https://www.cs.cmu.edu/~katef/">Prof. Katerina Fragkiadaki</a> on Computer Vision and Machine Learning.
+              <p>
+                I'll be working as a software engineer at Google Sunnyvale. 
               </p>
               <p>
-                I got my B.S. from the <a href="https://www.nd.edu/">University of Notre Dame</a>, majoring in Electrical Engineering and Maths. During my undergrad, I was fortunate to work with <a href="https://engineering.nd.edu/faculty/adam-czajka/">Prof. Adam Czajka</a> and <a href="https://www3.nd.edu/~kwb/">Prof. Kevin Bowyer</a>. 
-                I was also lucky to have interned with <a href="https://davheld.github.io/">Prof. David Held</a> and collaborated with <a href="http://people.csail.mit.edu/hangzhao/">Prof. Hang Zhao</a>.
+                I got my M.S. in Robotics at <a href="https://www.ri.cmu.edu/">Carnegie Mellon University</a>, working with <a href="https://www.cs.cmu.edu/~katef/">Prof. Katerina Fragkiadaki</a> on Computer Vision and Machine Learning. You can find a draft of my MSR thesis <a href="">here</a>.
+              </p>
+              <p>
+                Before that, I got my B.S. in Electrical Engineering and Maths from the <a href="https://www.nd.edu/">University of Notre Dame</a>. During my undergrad, I was fortunate to work with <a href="https://engineering.nd.edu/faculty/adam-czajka/">Prof. Adam Czajka</a> and <a href="https://www3.nd.edu/~kwb/">Prof. Kevin Bowyer</a> on Biometrics. 
+                I was also lucky to have interned with <a href="https://davheld.github.io/">Prof. David Held</a> and collaborated with <a href="https://hangzhaomit.github.io/">Prof. Hang Zhao</a>.
               </p>
               <p style="text-align:center">
                 <a href="mailto:zfang399@gmail.com">Email</a> &nbsp/&nbsp
@@ -50,22 +54,62 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr onmouseout="move_stop()" onmouseover="move_start()">
+          <tr onmouseout="bev_stop()" onmouseover="bev_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bev_image'>
+                  <img src='imgs/bev_gif.gif' width="160"></div>
+                <img src='imgs/bev_gif.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function bev_start() {
+                  document.getElementById('bev_image').style.opacity = "1";
+                }
+
+                function bev_stop() {
+                  document.getElementById('bev_image').style.opacity = "0";
+                }
+                bev_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2206.07959">
+                <papertitle>A Simple Baseline for BEV Perception Without LiDAR</papertitle>
+              </a>
+              <br>
+              <a href="https://www.cs.cmu.edu/~aharley/">Adam W. Harley</a>,
+              <strong>Zhaoyuan Fang</strong>,
+              <a href="https://www.tri.global/about-us/jie-li/">Jie Li</a>,
+              <a href="https://www.tri.global/about-us/rares-ambrus/">Rares Ambrus</a>,
+              <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a>
+              <br>
+              <em>Preprint</em>, 2022
+              <br>
+              <a href="http://www.cs.cmu.edu/~aharley/bev/">project page</a> / <a href="https://github.com/aharley/bev_baseline">code</a>
+              <br>
+              <p></p>
+              <p>
+              We build a surprisingly simple baseline for BEV perception that obtains state-of-the-art performance, and explores what are the factors behind it's good performance.
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="dpv_stop()" onmouseover="dpv_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='dpv_image'>
                   <img src='imgs/horse_square.gif' width="160"></div>
-                <img src='imgs/horse_sqaure.gif' width="160">
+                <img src='imgs/horse_square.gif' width="160">
               </div>
               <script type="text/javascript">
-                function move_start() {
+                function dpv_start() {
                   document.getElementById('dpv_image').style.opacity = "1";
                 }
 
-                function move_stop() {
+                function dpv_stop() {
                   document.getElementById('dpv_image').style.opacity = "0";
                 }
-                robustiris_stop()
+                dpv_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -77,13 +121,55 @@
               <strong>Zhaoyuan Fang</strong>,
               <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a>
               <br>
-              <em>Preprint</em>, 2022
+              <em>European Conference on Computer Vision (ECCV)</em>, 2022 - <strong style="color: red;">Oral</strong>
               <br>
-              <a href="http://www.cs.cmu.edu/~aharley/particles/">project page</a>
+              <a href="https://particle-video-revisited.github.io/">project page</a> / <a href="https://github.com/aharley/pips">code</a>
               <br>
               <p></p>
               <p>
               We re-build the classic &ldquo;particle video&rdquo; approach using components that drive the current state-of-the-art in flow and object tracking, such as dense cost maps, iterative optimization, and learned appearance updates.
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="tidee_stop()" onmouseover="tidee_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='tidee_image'>
+                  <img src='imgs/tidee_gif.gif' width="160"></div>
+                <img src='imgs/tidee_gif.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function tidee_start() {
+                  document.getElementById('tidee_image').style.opacity = "1";
+                }
+
+                function move_stop() {
+                  document.getElementById('tidee_image').style.opacity = "0";
+                }
+                tidee_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2207.10761">
+                <papertitle>TIDEE: Tidying Up Novel Rooms using Visuo-Semantic Common Sense Priors</papertitle>
+              </a>
+              <br>
+              <a href="https://gabesarch.me/">Gabriel Sarch</a>,
+              <strong>Zhaoyuan Fang</strong>,
+              <a href="https://www.cs.cmu.edu/~aharley/">Adam W. Harley</a>,
+              <a href="https://paulschydlo.com/">Paul Schydlo</a>,
+              <a href="https://sites.google.com/andrew.cmu.edu/tarrlab/people/michael-j-tarr">Michael J. Tarr</a>,
+              <a href="https://saurabhg.web.illinois.edu/">Saurabh Gupta</a>,
+              <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a>
+              <br>
+              <em>European Conference on Computer Vision (ECCV)</em>, 2022
+              <br>
+              <a href="https://tidee-agent.github.io/">project page</a> / <a href="https://github.com/Gabesarch/TIDEE">code</a>
+              <br>
+              <p></p>
+              <p>
+              TIDEE is an embodied agent that tides up a disordered scene based on learned commonsense object placement and room arrangement priors.
               </p>
             </td>
           </tr> 
@@ -103,7 +189,7 @@
                 function move_stop() {
                   document.getElementById('move_image').style.opacity = "0";
                 }
-                robustiris_stop()
+                move_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -113,7 +199,7 @@
               <br>
               <strong>Zhaoyuan Fang*</strong>,
               <a href="https://ayushjain1144.github.io/">Ayush Jain*</a>,
-              <a href="https://www.gabesar.ch/">Gabriel Sarch*</a>,
+              <a href="https://gabesarch.me/">Gabriel Sarch*</a>,
               <a href="https://www.cs.cmu.edu/~aharley/">Adam W. Harley</a>,
               <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a>
               <br>
@@ -328,6 +414,7 @@
               <heading>Misc.</heading>
               <p>
                 If you're bored, here's my favorite song of: 
+                <a href="https://www.youtube.com/watch?v=Gn8aBLQe4lk">07/22</a>,
                 <a href="https://www.youtube.com/watch?v=fsePYdkBd4o">04/22</a>,
                 <a href="https://www.youtube.com/watch?v=x_vwAzBsuWM">03/22</a>,
                 <a href="https://www.youtube.com/watch?v=k6ZoE4RrcDs">11/21</a>,
